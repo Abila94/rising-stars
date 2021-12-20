@@ -1,0 +1,77 @@
+body {
+
+  
+  
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+  #btn1{
+    background-image: linear-gradient(111deg, #ff1a6d, #ff6e2d 100%);
+    border-radius: 10px;
+  }
+  
+  #payment{
+    border-image-source: linear-gradient(98deg, #ff1a6d, #ff6e2d 100%);
+    background-image: linear-gradient(to bottom, #ffffff, #ffffff), linear-gradient(98deg, #ff1a6d, #ff6e2d 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    
+  }
+ 
+    .text-field {
+      position: relative;
+      margin: 10px 2.5px 20px 2.5px;
+      
+      }
+
+input {
+   
+  width: 35%;
+  border-style: thin solid ;
+  border-image-source: linear-gradient(98deg, #ff1a6d, #ff6e2d 100%);
+  border-image-slice: 1;
+  background-color: #ffffff; 
+  padding: 10px 10px 10px 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+ 
+  }
+  input:focus {
+    border: thin solid #ff1a6d;
+    border-bottom: solid medium #ff1a6d;
+    border-top: solid medium #ff1a6d;
+    border-left: solid medium #ff1a6d;
+    border-right: solid medium #ff1a6d;
+   
+  
+   
+}
+
+label {
+color: #999;
+position: absolute;
+pointer-events: none;
+left: 10px;
+top: 10px;
+transition: 0.2s;
+}
+
+input:focus ~ label, input:valid ~ label {
+top: -10px;
+left: 15px;
+font-size: small;
+color: #ff1a6d;
+background-color:#fff;
+padding:0 5px 0 5px;
+}
